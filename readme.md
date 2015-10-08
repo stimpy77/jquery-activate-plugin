@@ -6,7 +6,7 @@ by instead using
     <div data-jquery-activate="myPlugin">
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ###Why?
-Implementing the markup that defines an element that relies on a dependency shouldn't require its author to stop and look for some script file to update. It should be enough to identify the plugin, if the plugin is really so simple to activate as `$(..).theplugin();`.
+Implementing the markup that defines an element that relies on a dependency shouldn't require its author to stop and look for some script file to update or to add a `<script>` tag. It should be enough to identify the plugin's activation function, if the plugin is really so simple to activate as `$(..).theplugin();`.
 ###To use:
     <div data-jquery-activate="myPlugin,myOtherPlugin">...</div>
     <script src="jquery.js"></script>
