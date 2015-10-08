@@ -5,6 +5,10 @@
 //                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 $(function() {
 	$('*[data-jquery-activate]').each(function() {
-		$(this)[$(this).data('jquery-activate')]();
+        var plugins = $(this).data('jquery-activate').split(',');
+        var el = this;
+        $(plugins).each(function() { 
+            $(el)[this](); 
+        });
 	});
 });

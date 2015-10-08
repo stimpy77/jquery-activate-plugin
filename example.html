@@ -2,20 +2,26 @@
 <html>
 <head>
 	<link type="text/css" rel="stylesheet" href="style.css" />
+	<link type="text/css" rel="stylesheet" href="picker-themes/default.css" />
+	<link type="text/css" rel="stylesheet" href="picker-themes/default.date.css" />
 </head>
 <body>
 	
 	<form>
 		<div>
-			<input type="text" data-jquery-activate="fancyInput" >
+			<input type="text" data-jquery-activate="fancyInput,pickadate" >
 		</div>
 	</form>
 	
 	<script src="jquery-2.1.4.min.js"></script>
 	<script src="jquery.activate-plugin.js"></script>
 	<script src="fancyinput.js"></script>
+	<script src="picker.js"></script>
+	<script src="picker.date.js"></script>
+	<script src="picker.time.js"></script>
 	<!--<script>
 		$('input').fancyInput();
+		$('input').pickadate();
 	</script>-->
 </body>
 </html>
