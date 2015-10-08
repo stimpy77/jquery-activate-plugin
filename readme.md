@@ -1,6 +1,6 @@
 #jQuery Activate Plugin
 ###jon@jondavis.net
-Activate a plugin that is normally activated in script using
+Activate a plugin that is normally activated in script using ..
 
 ####Before:
     <div id="#ID_TO_SOMETHING">...</div>
@@ -10,13 +10,13 @@ Activate a plugin that is normally activated in script using
         });
     </script>
     
-on `document.ready` by instead using
+.. on `document.ready` by instead using ..
 
 ####After:
     <div data-jquery-activate="myPlugin">
     
 ###Why?
-Implementing the markup that defines an element that relies on a dependency shouldn't require its author to stop and look for some script file to update or to add a `<script>` tag. It should be enough to identify the plugin's activation function, if the plugin is really so simple to activate as `$(..).theplugin();`.
+Because this is really obvious. Implementing the markup that defines an element that relies on a dependency shouldn't require its author to stop and look for some script file to update or to add a `<script>` tag. It should be enough to identify the plugin's activation function, if the plugin is really so simple to activate as `$(..).theplugin();`.
 ###To use:
 Just add the script after jQuery and add the attribute `data-jquery-activate="plugin_name"` where `plugin_name` is a comma-delimited list of all plug-ins that are activated by calling `$('#identifier').plugin_name()`.
 
@@ -25,3 +25,5 @@ Just add the script after jQuery and add the attribute `data-jquery-activate="pl
     <script src="myPlugin.js"></script>
     <script src="myOtherPlugin.js"></script>
     <script src="jquery-activate-plugin.js"></script>
+###By the way...
+this plugin activator plugin is really, really simple. It's not about the complexity, it's about the convention, stupid.
