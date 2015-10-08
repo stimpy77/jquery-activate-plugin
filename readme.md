@@ -3,7 +3,10 @@
 Activate a plugin that is normally activated in script using
 
 ####Before:
-    `$('#ID_TO_SOMETHING').myPlugin()` 
+    <div id="#ID_TO_SOMETHING">...</div>
+    <script>
+        $('#ID_TO_SOMETHING').myPlugin();
+    </script>
     
 on `document.ready` by instead using
 
