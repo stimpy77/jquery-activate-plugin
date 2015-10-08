@@ -4,11 +4,11 @@
 // on document ready by instead using <div id="ID_TO_SOMETHING" data-jquery-activate="myPlugin">
 //                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 $(function() {
-	$('*[data-jquery-activate]').each(function() {
+    $('*[data-jquery-activate]').each(function() {
         var plugins = $(this).data('jquery-activate').split(',');
         var el = this;
         $(plugins).each(function() { 
             $(el)[this](); 
         });
-	});
+    });
 });
