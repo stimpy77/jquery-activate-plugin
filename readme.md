@@ -7,7 +7,7 @@ Activate a plugin that is normally activated in script using
     
 on `document.ready` by instead using
 
-####New:
+####After:
     <div data-jquery-activate="myPlugin">
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ###Why?
