@@ -1,5 +1,5 @@
-#jQuery Activate Plugin
-###jon@jondavis.net
+# jQuery Activate Plugin
+### jon@jondavis.net
 Activate a plugin that is normally activated in script using ..
 
 #### Before:
